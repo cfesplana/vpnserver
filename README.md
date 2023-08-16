@@ -110,11 +110,13 @@ install wireguard
   sudo apt install wireguard resolvconf
   ```
 ## Copy peer.conf file
-+ Windows <br>
++ **Windows** <br>
   You can copy the file using [WinSCP](https://winscp.net/download/WinSCP-6.1.1-Setup.exe)
   
-+ Linux / MacOS
-  
++ **Linux / MacOS**
+  ```
+  scp peer<number>.conf <client user>@<client ip address>:~peer<number>.conf
+  ```
 
 Distribute the config files to clients
 You could also use the docker image for your clients. But I think it's more practical for a client to install WireGuard directly on the host OS. If you want to know how to do that, you can also refer to my article about WireGuard installation and configuration on Linux.
