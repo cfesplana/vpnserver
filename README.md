@@ -24,15 +24,19 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 ```
 sudo apt update
 ```
+```
 sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
 # Check if Docker is installed correctly
+```
 sudo docker run hello-world
+```
 # Install Docker-Compose
 Download the latest version
-
+```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-
-sudo chmod +x /usr/local/bin/docker-compose
+``````
+sudo chmod +x /usr/local/bin/docker-compose```
 # Check if Docker-Compose is installed correctly
 sudo docker-compose --version
 (Optional) Add your linux user to the docker group
