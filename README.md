@@ -61,8 +61,7 @@ cd /opt/wireguard-server
 
 You can also use your personal home folder /home/<your-username>, this may require different permissions.
 
-Create a new file docker-compose.yml file, please refer to the linuxserver/wireguard documentation: https://hub.docker.com/r/linuxserver/wireguard.
-
+Create a new file docker-compose.yml file, please refer to the [linuxserver/wireguard](https://hub.docker.com/r/linuxserver/wireguard) documentation.
 ```
 vi docker-compose.yaml
 ```
