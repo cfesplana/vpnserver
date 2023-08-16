@@ -39,16 +39,16 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-### Check if Docker-Compose is installed correctly
-```
-sudo docker-compose --version
-```
 ### (Optional) Add your linux user to the docker group
 ```
 sudo usermod -aG docker $USER
 ```
 ```
 newgrp docker
+```
+### Check if Docker-Compose is installed correctly
+```
+sudo docker-compose --version
 ```
 ## Set up Wireguard in Docker
 ### Create a new Docker-Compose file
