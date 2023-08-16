@@ -1,14 +1,14 @@
 # vpnserver
 Create your own VPN server with WireGuard in Docker
 
-# Prerequisites
+## Prerequisites
 Linux Server running Ubuntu 20.04 LTS or newer
 For installing Docker on other Linux distriubtions or different versions than Ubuntu 20.04 LTS, follow the official installation instructions.
 
-# Install Docker, and Docker-Compose
+### Install Docker, and Docker-Compose
 You can still install Docker on a Linux Server that is not running Ubuntu, however, this may require different commands!
 
-# Install Docker
+### Install Docker
 ```
 sudo apt update && sudo apt upgrade
 ```
@@ -27,11 +27,11 @@ sudo apt update
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-# Check if Docker is installed correctly
+### Check if Docker is installed correctly
 ```
 sudo docker run hello-world
 ```
-# Install Docker-Compose
+## Install Docker-Compose
 Download the latest version
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -39,15 +39,15 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-# Check if Docker-Compose is installed correctly
+## Check if Docker-Compose is installed correctly
 ```
 sudo docker-compose --version
 ```
-# (Optional) Add your linux user to the docker group
+## (Optional) Add your linux user to the docker group
 ```
 sudo usermod -aG docker $USER
 ```
-# Set up Wireguard in Docker
+### Set up Wireguard in Docker
 Create a new Docker-Compose file
 Create a new folder in the /opt directory.
 
