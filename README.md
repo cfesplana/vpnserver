@@ -66,7 +66,7 @@ Create a new file docker-compose.yml file, please refer to the [linuxserver/wire
 ```
 vi docker-compose.yaml
 ```
-Replace the <your-server-url> with the public IP address of your WireGuard Server, because your clients will need to connect from outside your local network. You can also set this to auto, the docker container will automatically determine your public IP address and use this in the client's configuration.
+Replace the `<your-server-url>` with the public IP address of your WireGuard Server, because your clients will need to connect from outside your local network. You can also set this to auto, the docker container will automatically determine your public IP address and use this in the client's configuration.
 ```
 version: "2.1"
 services:
@@ -101,13 +101,13 @@ docker-compose up -d
 Distribute the config files to clients
 You could also use the docker image for your clients. But I think it's more practical for a client to install WireGuard directly on the host OS. If you want to know how to do that, you can also refer to my article about WireGuard installation and configuration on Linux.
 
-When you have started the WireGuard container, it should automatically create all configuration files in your ./config folder. All you need to do is to copy the corresponding ./config/peer1/peer1.conf file to your client and use that as your wg0.conf, for instance. If you want to connect mobile phones you can also just scan the peer1.png QR code, to print the QR code to the console, simply use the following command:
+When you have started the WireGuard container, it should automatically create all configuration files in your **./config folder**. All you need to do is to copy the corresponding **./config/peer1/peer1.conf** file to your client and use that as your **wg0.conf**, for instance. If you want to connect mobile phones you can also just scan the **peer1.png QR code**, to print the QR code to the console, simply use the following command:
 ```
 docker exec -it wireguard /app/show-peer <peer-number>
 ```
 ### (Optional) Add additional clients
 If you want to add additional clients, you simply can increase the PEERS parameter in the docker-compose.yaml file. After changing this value you need to restart your 
-docker container with the ``` --force-recreate ``` parameter.
+docker container with the ` --force-recreate ` parameter.
 ```
 docker-compose up -d --force-recreate
 ```
