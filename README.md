@@ -1,8 +1,9 @@
 # Create your own VPN server with WireGuard in Docker
 
 ## Prerequisites
-Linux Server running Ubuntu 20.04 LTS or newer.
-For installing Docker on other Linux distriubtions or different versions than Ubuntu 20.04 LTS, follow the official installation instructions.
++ Linux Server running Ubuntu 20.04 LTS or newer
+  
+*For installing Docker on other Linux distriubtions or different versions than Ubuntu 20.04 LTS, follow the [official installation instructions](https://docs.docker.com/install/).*
 
 ## Install Docker, and Docker-Compose
 You can still install Docker on a Linux Server that is not running Ubuntu, however, this may require different commands!
