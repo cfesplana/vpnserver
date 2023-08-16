@@ -1,5 +1,4 @@
-# vpnserver
-Create your own VPN server with WireGuard in Docker
+# Create your own VPN server with WireGuard in Docker
 
 ## Prerequisites
 Linux Server running Ubuntu 20.04 LTS or newer
