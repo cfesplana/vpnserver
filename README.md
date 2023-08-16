@@ -27,11 +27,11 @@ sudo apt update
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-## Check if Docker is installed correctly
+### Check if Docker is installed correctly
 ```
 sudo docker run hello-world
 ```
-### Install Docker-Compose
+## Install Docker-Compose
 Download the latest version
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -39,11 +39,11 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-## Check if Docker-Compose is installed correctly
+### Check if Docker-Compose is installed correctly
 ```
 sudo docker-compose --version
 ```
-## (Optional) Add your linux user to the docker group
+### (Optional) Add your linux user to the docker group
 ```
 sudo usermod -aG docker $USER
 ```
