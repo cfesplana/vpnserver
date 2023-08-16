@@ -101,6 +101,21 @@ services:
 ```
 docker-compose up -d
 ```
+## Connect your laptop / desktop
+install wireguard 
++ [Windows](https://download.wireguard.com/windows-client/wireguard-installer.exe)
++ [Mac OS](https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12)
++ Ubuntu
+  ```
+  sudo apt install wireguard resolvconf
+  ```
+## Copy peer.conf file
++ Windows
+  You can copy the file using [WinSCP](https://winscp.net/download/WinSCP-6.1.1-Setup.exe)
+  
++ Linux / MacOS
+  
+
 Distribute the config files to clients
 You could also use the docker image for your clients. But I think it's more practical for a client to install WireGuard directly on the host OS. If you want to know how to do that, you can also refer to my article about WireGuard installation and configuration on Linux.
 ```
