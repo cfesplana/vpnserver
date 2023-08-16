@@ -110,7 +110,7 @@ install wireguard
   sudo apt install wireguard resolvconf
   ```
 ## Copy peer.conf file
-+ Windows +
++ Windows (`<br>`)
   You can copy the file using [WinSCP](https://winscp.net/download/WinSCP-6.1.1-Setup.exe)
   
 + Linux / MacOS
