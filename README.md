@@ -47,6 +47,9 @@ sudo docker-compose --version
 ```
 sudo usermod -aG docker $USER
 ```
+```
+newgrp docker
+```
 ## Set up Wireguard in Docker
 ### Create a new Docker-Compose file
 Create a new folder in the /opt directory.
