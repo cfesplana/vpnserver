@@ -121,7 +121,7 @@ docker exec -it wireguard /app/show-peer <peer-number>
 + You can also [install](https://www.wireguard.com/install/) on your servers.
 ## Copy peer.conf file
 + **Windows** <br>
-  You can copy the file using [WinSCP](https://winscp.net/download/WinSCP-6.1.1-Setup.exe)
+  You can copy the file using [WinSCP](https://winscp.net/eng/download.php)
   
 + **Linux / MacOS**
   ```
