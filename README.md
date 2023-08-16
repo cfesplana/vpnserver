@@ -50,11 +50,23 @@ sudo usermod -aG docker $USER
 ## Set up Wireguard in Docker
 ### Create a new Docker-Compose file
 Create a new folder in the /opt directory.
+```
+sudo mkdir /opt/wireguard-server
+```
+```
+sudo chown user:user /opt/wireguard-server
+```
+```
+cd /opt/wireguard-server
+```
 
 You can also use your personal home folder /home/<your-username>, this may require different permissions.
 
-Create a new file docker-compose.ymlfile, please refer to the linuxserver/wireguard documentation: https://hub.docker.com/r/linuxserver/wireguard.
+Create a new file docker-compose.yml file, please refer to the linuxserver/wireguard documentation: https://hub.docker.com/r/linuxserver/wireguard.
 
+```
+vi docker-compose.yaml
+```
 Replace the <your-server-url> with the public IP address of your WireGuard Server, because your clients will need to connect from outside your local network. You can also set this to auto, the docker container will automatically determine your public IP address and use this in the client's configuration.
 ```
 version: "2.1"
