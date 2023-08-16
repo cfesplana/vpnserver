@@ -102,7 +102,7 @@ services:
 docker-compose up -d
 ```
 ## Connect your laptop / desktop
-install wireguard 
+### Install WireGuard 
 + [Windows](https://download.wireguard.com/windows-client/wireguard-installer.exe)
 + [Mac OS](https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12)
 + Ubuntu
@@ -116,6 +116,17 @@ install wireguard
 + **Linux / MacOS**
   ```
   scp peer<number>.conf <client user>@<client ip address>:~peer<number>.conf
+  ```
+  ```
+  sudo mv peer<number>.conf /etc/wireguard/wg0.conf
+  ```
+  ### Start WireGuard Client
+  ```
+  wg-quick up wg0
+  ```
+  ### Check if WireGuard connected to server
+  ```
+  sudo wg
   ```
 
 Distribute the config files to clients
