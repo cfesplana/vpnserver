@@ -39,16 +39,16 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-## Check if Docker-Compose is installed correctly
+### Check if Docker-Compose is installed correctly
 ```
 sudo docker-compose --version
 ```
-## (Optional) Add your linux user to the docker group
+### (Optional) Add your linux user to the docker group
 ```
 sudo usermod -aG docker $USER
 ```
-### Set up Wireguard in Docker
-## Create a new Docker-Compose file
+## Set up Wireguard in Docker
+### Create a new Docker-Compose file
 Create a new folder in the /opt directory.
 
 You can also use your personal home folder /home/<your-username>, this may require different permissions.
@@ -83,7 +83,7 @@ services:
       - net.ipv4.conf.all.src_valid_mark=1
     restart: unless-stopped
 ```
-## Start the WireGuard Server
+### Start the WireGuard Server
 ```
 docker-compose up -d
 ```
@@ -94,7 +94,7 @@ When you have started the WireGuard container, it should automatically create al
 ```
 docker exec -it wireguard /app/show-peer <peer-number>
 ```
-## (Optional) Add additional clients
+### (Optional) Add additional clients
 If you want to add additional clients, you simply can increase the PEERS parameter in the docker-compose.yaml file. After changing this value you need to restart your 
 docker container with the ``` --force-recreate ``` parameter.
 ```
