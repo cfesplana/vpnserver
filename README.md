@@ -82,7 +82,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Asia/Singapore
       - SERVERURL=<your-server-url> #optional
       - SERVERPORT=51820 #optional
       - PEERS=1 #optional
